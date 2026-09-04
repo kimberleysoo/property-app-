@@ -31,6 +31,7 @@ const INITIAL_MESSAGES: ChatMessage[] = [
 ];
 
 const SUGGESTED_PROMPTS = [
+  "What are 4-Room flats in Tampines transacting for on Data.gov.sg?",
   "How much agent commission do I save on an S$850k 5-room flat?",
   "What are the ABSD rules for upgrading from HDB to private condo?",
   "What CPF Housing Grants can first-timer couples apply for?",

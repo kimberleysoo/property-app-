@@ -72,3 +72,32 @@ export interface ChatMessage {
   timestamp: string;
   sourceBadge?: string;
 }
+
+export interface HdbResaleRecord {
+  _id: number;
+  month: string;
+  town: string;
+  flat_type: string;
+  block: string;
+  street_name: string;
+  storey_range: string;
+  floor_area_sqm: string;
+  floor_area_sqft?: number;
+  flat_model: string;
+  lease_commence_date: string;
+  remaining_lease: string;
+  resale_price: string | number;
+  psf?: number;
+  commission_saved?: number;
+}
+
+export interface HdbApiResponse {
+  success: boolean;
+  records: HdbResaleRecord[];
+  total: number;
+  limit: number;
+  offset: number;
+  filters?: Record<string, string>;
+  datasetId: string;
+  lastUpdated?: string;
+}
