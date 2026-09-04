@@ -371,7 +371,7 @@ export const MarketDataBenchmarks: React.FC<MarketDataBenchmarksProps> = ({ them
                 <div>
                   <div className="flex items-center gap-2 flex-wrap">
                     <span className="font-bold text-sm text-black dark:text-white">
-                      URA DataService: PMI_Resi_Transaction
+                      URA Private Residential Market Data
                     </span>
                     {uraConfigured ? (
                       <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300">
@@ -385,11 +385,7 @@ export const MarketDataBenchmarks: React.FC<MarketDataBenchmarksProps> = ({ them
                     )}
                   </div>
                   <p className="text-xs text-zinc-600 dark:text-zinc-400 mt-1 leading-relaxed">
-                    Queries send both <strong>AccessKey</strong> and daily <strong>Token</strong> headers to 
-                    <code className="mx-1 px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 font-mono text-[11px]">
-                      invokeUraDS/v1?service=PMI_Resi_Transaction&batch=1..4
-                    </code> 
-                    covering all 28 postal districts merged into a single real-time stream.
+                    Official private condominium, apartment, and landed property transaction records across all 28 Singapore postal districts.
                   </p>
                 </div>
               </div>
