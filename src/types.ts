@@ -101,3 +101,36 @@ export interface HdbApiResponse {
   datasetId: string;
   lastUpdated?: string;
 }
+
+export interface UraTransactionRecord {
+  id: string;
+  project: string;
+  street: string;
+  marketSegment: "CCR" | "RCR" | "OCR" | string;
+  district: string;
+  propertyType: string;
+  tenure: string;
+  contractDate: string;
+  contractDateFormatted: string;
+  typeOfSale: string;
+  typeOfSaleLabel: "New Sale" | "Sub Sale" | "Resale" | string;
+  price: number;
+  areaSqm: number;
+  areaSqft: number;
+  psf: number;
+  floorRange: string;
+  noOfUnits: number;
+  commissionSaved: number;
+  batch: number;
+}
+
+export interface UraApiResponse {
+  success: boolean;
+  configured: boolean;
+  totalProjects: number;
+  totalTransactions: number;
+  batchesLoaded: number[];
+  records: UraTransactionRecord[];
+  lastUpdated: string;
+  message?: string;
+}
