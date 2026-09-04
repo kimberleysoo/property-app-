@@ -1,0 +1,6 @@
+{
+  "name": "SG PropDirect - Verified Direct Real Estate Platform",
+  "description": "Singapore's verified direct property platform connecting first-time HDB buyers, upgraders, landlords, and tenants with zero commission fees, URA benchmarks, Singpass security, and cross-device cloud sync.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
